@@ -12,7 +12,7 @@ $ helm install my-release sturrent/check-k8s-deprecated-apis
 ## Introduction
 
 This chart deploys a pod using the [check-deprecated-apis](https://hub.docker.com/repository/docker/sturrent/check-deprecated-apis) container image on a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
-The pod will runt the [k8s-check-deprecated-apis](https://github.com/sturrent/k8s-check-deprecated-apis) script and will output the status of deprecated API objects.
+The pod will run the [k8s-check-deprecated-apis](https://github.com/sturrent/k8s-check-deprecated-apis) script and will output the status of deprecated API objects.
 
 ## Prerequisites
 
