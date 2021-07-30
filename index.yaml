@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  check-k8s-deprecated-apis:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-07-30T19:44:57.09351322Z"
+    description: A Helm chart for Kubernetes
+    digest: 37508ef9fd3d4310bb0dab8935c61d542e6950fe65c0895ffdb83da0e3136b9c
+    name: check-k8s-deprecated-apis
+    type: application
+    urls:
+    - https://github.com/sturrent/helm-charts/releases/download/check-k8s-deprecated-apis-0.1.0/check-k8s-deprecated-apis-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-07-30T19:44:56.837831052Z"
