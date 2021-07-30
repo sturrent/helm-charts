@@ -39,3 +39,7 @@ helm delete my-release
 ```
 
 The command removes all the Kubernetes components associated with the chart and deletes the release.
+
+## Example
+https://user-images.githubusercontent.com/16940760/127706835-c9c07ee2-e8c1-4924-85ed-b7111ffcfbed.png
+
