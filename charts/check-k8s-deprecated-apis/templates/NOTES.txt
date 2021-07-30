@@ -1,0 +1,2 @@
+--- Get the results fromt the check api pod logs:
+ kubectl -n {{ .Release.Namespace }} logs -f check-api

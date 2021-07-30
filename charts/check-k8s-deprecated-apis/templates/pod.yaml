@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: check-api
+  labels:
+    {{- include "check-k8s-deprecated-apis.labels" . | nindent 4 }}
+spec:
+    securityContext:
+    {{- toYaml .Values.podSecurityContext | nindent 8 }}
+    containers:
+    - name: {{ .Chart.Name }}
+      securityContext:
+      image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+      imagePullPolicy: {{ .Values.image.pullPolicy }}
+    serviceAccountName: {{ include "check-k8s-deprecated-apis.serviceAccountName" . }}
